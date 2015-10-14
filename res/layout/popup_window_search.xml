@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#B0000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#EAECEB"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/popup_window_et_search"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_search"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="8dp"
+            android:hint="搜索"
+            android:imeOptions="actionDone"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="#FFFFFFFF" />
+
+        <TextView
+            android:id="@+id/popup_window_tv_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@drawable/bg_top_text" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#000000"
+        android:divider="#e3e3e3"
+        android:dividerHeight="1.0dp"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/popup_window_v_alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <!-- <ListView -->
+    <!-- android:id="@+id/popup_window_lv" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="fill_parent" -->
+    <!-- android:background="#FFFFFFFF" -->
+    <!-- android:visibility="gone" /> -->
+
+</LinearLayout>
